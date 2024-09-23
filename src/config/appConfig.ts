@@ -10,7 +10,7 @@ const appConfig = {
         secret: process.env.JWT_SECRET || 'nhjaASDhjL<>GHIK R&GBV^t7o8li<KUQRH#'
     },
     mongo: {
-        uri: process.env.MONGO_URI || 'mongodb://localhost:27017/radcomm'
+        uri: process.env.MONGO_URI || 'mongodb://localhost:27017/radapp'
     }
 }
 

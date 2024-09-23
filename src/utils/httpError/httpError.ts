@@ -37,7 +37,7 @@ class HttpResponseHandler {
 
     sendSuccessResponse = async ({ statusCode = 200, data = {}, message = 'Request successfully handled', res }: { statusCode?: number, data?: any, message?: string, res: Response }) => {
         return res.status(statusCode).send({
-            code: 'radcomm/http/success',
+            code: 'radapp/http/success',
             message,
             data
         })

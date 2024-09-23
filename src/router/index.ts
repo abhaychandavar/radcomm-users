@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import userRouter from './internal/userRouter';
+import userRouter from './userRouter';
 import userInternalRouter from './internal/userRouter';
 
 const appRouter = Router();

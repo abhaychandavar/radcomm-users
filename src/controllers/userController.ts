@@ -56,6 +56,24 @@ class userController {
             })
         },
     });
+
+    static addUserToWaitlist = async (req: Request, res: Response, next: NextFunction) => await controllerHelper.http({
+        req,
+        res,
+        next,
+        handler: async (data) => await userService.addUserToWaitlist({
+            email: data!.email,
+            phone: data?.phone
+        }),
+        successMessage: 'Raw user fetched successfully',
+        dataExtractor: req => {
+            const { email, phone } = req.body
+            return ({
+                email,
+                phone
+            })
+        },
+    });
 }
 
 export default userController;
